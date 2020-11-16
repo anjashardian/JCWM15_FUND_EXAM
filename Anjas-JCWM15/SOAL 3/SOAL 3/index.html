@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>soal 3</title>
+    <style>
+        table, tr, td, th{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }th,td {
+            padding: 10px;
+        }td{
+            text-align: center;
+        }body{
+            background-color: azure;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>FORM USERS</h1>
+    <form id="tambah-users">
+        <input type="text" id="username" placeholder="username">
+        <input type="text" id="email" placeholder="email">
+        <p>role</p>
+        <select id="select-role">
+            <option value="admin">admin</option>
+            <option value="user">user</option>
+        </select>
+        <button onclick="OnButtonAdd(event)">ADD USER</button>
+    </form>
+
+    <h1>USERS DATA</h1>
+    <table id="daftar-user">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>username</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="tbody-userdata"></tbody>
+    </table>
+</body>
+<script src="/Anjas-JCWM15/SOAL 3/SOAL 3/database.js"></script>
+<script src="/Anjas-JCWM15/SOAL 3/SOAL 3/userdata.js"></script>
+</html>
